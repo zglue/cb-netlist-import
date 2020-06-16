@@ -5,21 +5,29 @@ Overview
 ========
 
 
+
+
 Implementation
 ==============
 
 
 
-Netlist Components Models
-=========================
 
-As mentioned previously, the netlist format specification that follows is valid SPICE format, and is simulatable with a SPICE engine. It focuses on 
+Netlist Components
+==================
 
-* SubCircuit Models
-* Part Instances
+As mentioned previously, the netlist format specification that follows is valid SPICE format, and is simulatable with the correct simulation engine. With that said, this document does not read as a SPICE format guide. Instead it focuses on how the different components that make up a ZIP are represented in SPICE to successfully generate, and import, a netlist into a ChipBuilder system. A netlist following this specification is capable of describing all the details that make up an internal ZIP schematic.
+
+Any ChipBuilder importable netlist is comprised of a combination of the following:
+
+* A metadata header
+* A SmartFabric IP block
+* Chiplets
+* Bondpad Labels
+* Programmable Resistors
 
 
-MetaData Header
+Metadata Header
 ---------------
 
 This header is optional, but it's useful for documentation purposes. Include information such as design name, date and time of creation, authors, etc..
@@ -43,8 +51,8 @@ Part Instance::
     Net names don't need to be ordered alphanumerically; however, the pin number order used in the subcircuit model needs to be conserved in the part instance.
 
 
-SmartFabric IP
---------------
+SmartFabric IP Block
+--------------------
 
 Subcircuit model name: ``SmartFabric``
 
@@ -62,8 +70,8 @@ Part Instance::
 
     U? <NetName[1]> <NetName[2]>... <NetName[N]> <BasePartNumber>
 
-Bondpad Label
--------------
+Bondpad Labels
+--------------
 
 Subcircuit model::
 
