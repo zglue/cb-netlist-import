@@ -45,9 +45,7 @@ To import the netlist in a new ChipBuilder system follow the steps below:
 * Log-in to ChipBuilder
 * Click on ``Create new ZiP``
 * Provide a system name
-* Select ``Zeus2`` as the architecture
-* Select ``64 x 44`` as the tile size
-* Click on ``import from Spice Netlist`` and select the appropriate file.
+* Click on ``import from Spice Netlist`` and select the appropriate file
 * Click on ``Save``
 
 These steps are demonstrated on the GIF below:

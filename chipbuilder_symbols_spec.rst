@@ -41,9 +41,9 @@ SmartFabric IP
 
 The SmartFabric silicon interposer contains a variety of IP blocks that can be used to eliminate BOM from your system. These IPs are common to all ZIP chip designs, which means that every schematic should contain only one instance of this block. This symbol is described below.
 
-Part Designatior: ``S?``
-Part Value:       ``SmartFabric``
-Part Pins:
+* Part Designatior: ``S?``
+* Part Value:       ``SmartFabric``
+* Part Pins:
 
 ============  ==============
 SmartFabric Pin Table
@@ -153,9 +153,9 @@ Bondpad Label
 
 Bondpad labels are not physical components, but their presence implies a physical routing requirement for the net it's connected to. A bondpad label identifies a net as a ZIP chip IO, which means that it will be required for that net to be routed to a package pin. Exactly how it's routed is specified in the ChipBuilder system once the netlist is imported. Follow the specification below for the bondpad label symbol.
 
-Part Designatior: ``BP?``
-Part Value:       ``BONDPAD``
-Part Pins:
+* Part Designatior: ``BP?``
+* Part Value:       ``BONDPAD``
+* Part Pins:
 
 ============  ==============
 Bondpad label Pin Table
@@ -171,9 +171,9 @@ Programmable Resistor
 
 To differentiate an integrated programmable resistor on the SmartFabric interposer from discrete passives, it's recommended to create a separate symbol for it. Follow the specification below to create a symbol for this special resistor. 
 
-Part Designatior: ``RP?``
-Part Value:       ``<ResistanceValue>``
-Part Pins:
+* Part Designatior: ``RP?``
+* Part Value:       ``<ResistanceValue>``
+* Part Pins:
 
 ============  ==============
 Resistor Pin Table
@@ -186,4 +186,4 @@ Resistor Pin Table
 
 .. note::
 
-    Alternatively, it is possible to manually modify the part designator of a already-existing resistor symbol after placing it on the schematic, but future features may include other properties to further specify these programmable resistors. As described in the ``Library Symbols`` section, making a dedicated part on a library is recommended.
+    Alternatively, it is possible to manually modify the part designator of an already-existing resistor symbol after placing it on the schematic, but future features may include other properties to further specify these programmable resistors. As described in the ``Library Symbols`` section, making a dedicated part on a library is recommended.
