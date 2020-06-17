@@ -40,13 +40,31 @@ Most schematic capture tools have scripting capabilities that allow a user to pr
 Importing the Netlist
 ---------------------
 
+There are two flows for importing a netlist:
+
+1. Import from finished placement
+2. Import from new system
+
+zGlue recommends using the first method to ensure that your components fit on top of the SmartFabric, before creating a schematic. Assuming that the netlist is already created, both methods are described below.
+
+To import the netlist from a completed placement, follow these steps:
+
+1. Log-in to ChipBuilder
+2. Create a new system
+3. Place your components
+4. Click on ``Menu`` -> ``import from Spice Netlist`` and select the appropriate file
+
+These steps are demonstrated on the following GIF:
+
+.. image:: media/cb_netlist_from_placement.gif
+
 To import the netlist in a new ChipBuilder system follow the steps below:
 
-* Log-in to ChipBuilder
-* Click on ``Create new ZiP``
-* Provide a system name
-* Click on ``import from Spice Netlist`` and select the appropriate file
-* Click on ``Save``
+1. Log-in to ChipBuilder
+2. Click on ``Create new ZiP``
+3. Provide a system name
+4. Click on ``import from Spice Netlist`` and select the appropriate file
+5. Click on ``Save``
 
 These steps are demonstrated on the GIF below:
 
