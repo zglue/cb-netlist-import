@@ -27,20 +27,20 @@ Flow Diagram
 ------------
 
 .. _figure_ftdi_drivers:
-.. figure:: media/netlist_import_flow.PNG
+.. figure:: media/netlist_import_flows.PNG
     :align: center
 
 
 Netlist Generation
 ------------------
 
-Most schematic capture tools have scripting capabilities that allow a user to programmatically access properties of a project. That feature allows a user to create a script that generates a netlist which follows the format specified in this repository. Also, some of these tools may already have utilities to create netlist from a schematic. zGlue already offers a script to generate the netlist for OrCAD Capture on the template linked in the ``Background`` section; nonetheless, it's possible to adapt the script to different schematic capture tools. Feel free to explore your tool of choice, before porting the netlist generatior script.
+Most schematic capture tools have scripting capabilities that allow a user to programmatically access properties of a project. That feature allows a user to create a script that generates a netlist which follows the format specified in this repository. Also, some of these tools may already have utilities to create netlists from a schematic. zGlue already offers a script to generate the netlist for OrCAD Capture on the template linked in the ``Background`` section; nonetheless, it's possible to adapt the script to different schematic capture tools. Feel free to explore your tool of choice, before porting the netlist generation script.
 
 
 Importing the Netlist
 ---------------------
 
-There are two flows for importing a netlist:
+There are two methods for importing a netlist:
 
 1. Import from finished placement
 2. Import from new system
@@ -56,7 +56,7 @@ To import the netlist from a completed placement, follow these steps:
 
 These steps are demonstrated on the following GIF:
 
-.. image:: media/cb_netlist_from_placement.gif
+.. image:: media/import_from_placement.gif
 
 To import the netlist in a new ChipBuilder system follow the steps below:
 
@@ -68,7 +68,7 @@ To import the netlist in a new ChipBuilder system follow the steps below:
 
 These steps are demonstrated on the GIF below:
 
-.. image:: media/cb_netlist_feature.gif
+.. image:: media/import_from_newsys.gif
 
 
 What's Included?
