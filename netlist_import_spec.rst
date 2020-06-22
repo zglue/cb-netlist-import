@@ -56,7 +56,7 @@ Sub-circuit model name: ``SmartFabric``
 
 Part Instance::
 
-    S1 <NetName[1]> <NetName[2]>... <NetName[N]> SmartFabric
+    XS1 <NetName[1]> <NetName[2]>... <NetName[N]> SmartFabric
 
 .. note::
     
@@ -72,7 +72,7 @@ Sub-circuit model name: ``<BasePartNumber>``
 
 Part Instance::
 
-    U? <NetName[1]> <NetName[2]>... <NetName[N]> <BasePartNumber>
+    XU? <NetName[1]> <NetName[2]>... <NetName[N]> <BasePartNumber>
 
 
 Bondpad Labels
@@ -88,7 +88,11 @@ Sub-circuit model::
 
 Part Instance::
 
-    BP? <NetName[1]> BONDPAD
+    XBP? <NetName[1]> BONDPAD
+
+.. note::
+
+    The 'X' in front of the part reference for the SmartFabric symbol, the bondpad labels, and chiplet symbols is curcial. This tells a SPICE engine that the instance uses the sub-circuit model defined by the ``<ModelName>`` attribute at the end of the instance declaration.
 
 
 Programmable Resistors
